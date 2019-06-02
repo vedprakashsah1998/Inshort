@@ -124,6 +124,7 @@ public class MainFragment extends Fragment {
 
                         articles.add(article);
                         adapter = new Adapter(getActivity(), articles);
+                        Collections.shuffle(articles);
                         verticalViewPageAdapter.setAdapter(adapter);
                         // adapter.notifyDataSetChanged();
                         Log.d("Hello bhai", article.getUrlToImage());
